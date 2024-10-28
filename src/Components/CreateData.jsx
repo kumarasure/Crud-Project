@@ -32,11 +32,11 @@ const CreateData = () => {
   <div className="mb-3">
     <label className="form-label">Name:</label>
     <input name="username" type="text" className="form-control" aria-describedby="emailHelp" 
-    onChange={(e) => setName(e.target.value)} placeholder='Enter The Name' />
+    onChange={(e) => setName(e.target.value)} placeholder='Enter Name:' />
   </div>
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label" >Email address:</label>
-    <input name="email" type="email" className="form-control" onChange={(e) => setEmail(e.target.value)} placeholder='Enter The email'/>
+    <input name="email" type="email" className="form-control" onChange={(e) => setEmail(e.target.value)} placeholder='Enter Email:'/>
   </div>
   <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Submit</button>
 </form>
