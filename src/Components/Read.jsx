@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 import axios from "axios";
 import { Link } from 'react-router-dom'
 
@@ -19,7 +19,7 @@ const Read = () => {
         getData();
        })
       if(id === id) {
-        swal('You Want Delete Or Cancelld')
+        alert('You Want Delete Or Cancelld')
       } 
    })
   useEffect(() => {
