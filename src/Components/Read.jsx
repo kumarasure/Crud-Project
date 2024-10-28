@@ -18,9 +18,9 @@ const Read = () => {
        .then(()=>{
         getData();
        })
-      // if(id === id) {
-      //   swal('You Want Delete Or Cancelld')
-      // } 
+      if(id === id) {
+        swal('You Want Delete Or Cancelld')
+      } 
    })
   useEffect(() => {
     getData();
