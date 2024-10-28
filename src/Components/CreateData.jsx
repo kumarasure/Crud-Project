@@ -22,7 +22,7 @@ const CreateData = () => {
         }
   return (
     <>
-   <div className='d-flex justify-content-between m-2'>
+   <div className='d-flex justify-content-between m-2 main-container'>
     <h1>Create Page</h1>
     <Link to="/read">
     <button className='btn btn-primary'>View Data</button>

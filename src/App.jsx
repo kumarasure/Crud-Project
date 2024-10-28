@@ -3,6 +3,7 @@ import CreateData from "./Components/CreateData";
 import Read from "./Components/Read";
 import Update from "./Components/Update";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './index.css';
 function App() {
   return (
     <>

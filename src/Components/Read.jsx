@@ -19,7 +19,7 @@ const Read = () => {
         getData();
        })
       if(id === id) {
-        alert('You Want Delete Or Cancelld')
+        alert('You Want Delete Or Cancel')
       } 
    })
   useEffect(() => {
