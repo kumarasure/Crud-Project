@@ -67,7 +67,7 @@ const Read = () => {
                   <td>{allElem.email}</td>
                   <td>
                     <Link to="/update">
-                    <button className="btn-success" onClick={()=>setLocaStorage(allElem.id,allElem.name,allElem.email)}>Edid</button>
+                    <button className="btn-success" onClick={()=>setLocaStorage(allElem.id,allElem.name,allElem.email)}>Edit</button>
                     </Link>
                   </td>
                   <td>
