@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 // import swal from 'sweetalert';
+import Swal from 'sweetalert2'
 import axios from "axios";
 import { Link } from 'react-router-dom'
 
 const Read = () => {
   const [data, setData] = useState([]);
   const [tabledark, setTableDark] = useState('')
+  const [deleteid, setDeleteid] = useState("")
   function getData() {
     axios.get("https://6719d961acf9aa94f6a809f4.mockapi.io/crud-operation1")
       .then((res) => {
@@ -19,7 +21,23 @@ const Read = () => {
         getData();
        })
       if(id === id) {
-        alert('You Want Delete Or Cancel')
+        Swal.fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!"
+        }).then((id) => {
+          if (id.isConfirmed) {
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your file has been deleted.",
+              icon: "success"
+            });
+          }
+        });
       } 
    })
   useEffect(() => {
