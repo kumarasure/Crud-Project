@@ -30,11 +30,11 @@ const Create = () => {
      <form onSubmit={handleSubmit}>
   <div className="mb-3">
     <label className="form-label">Name:</label>
-    <input name="username" type="text" value={name.username} className="form-control" onChange={handleChange}/>
+    <input name="username" type="text" value={name.username} className="form-control" onChange={handleChange} required />
   </div>
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label" >Email address:</label>
-    <input name="email" type="text" value={name.email} className="form-control" onChange={handleChange} />
+    <input name="email" type="text" value={name.email} className="form-control" onChange={handleChange} required />
   </div>
 
   <div className="mb-3">
